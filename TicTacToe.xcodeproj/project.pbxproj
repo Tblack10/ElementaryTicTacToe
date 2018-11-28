@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F7C98F221AA499900719CB4 /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7C98F121AA499900719CB4 /* TicTacToe.swift */; };
+		6F7C98F821ABB90E00719CB4 /* TicTacToeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7C98F721ABB90E00719CB4 /* TicTacToeView.swift */; };
+		6FB0E9E921AE4B3A00F957D2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0E9E821AE4B3A00F957D2 /* SecondViewController.swift */; };
 		6FC8528B21A0C54400555690 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC8528A21A0C54400555690 /* AppDelegate.swift */; };
 		6FC8528D21A0C54400555690 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC8528C21A0C54400555690 /* ViewController.swift */; };
 		6FC8529021A0C54400555690 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FC8528E21A0C54400555690 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F7C98F121AA499900719CB4 /* TicTacToe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToe.swift; sourceTree = "<group>"; };
+		6F7C98F721ABB90E00719CB4 /* TicTacToeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeView.swift; sourceTree = "<group>"; };
+		6FB0E9E821AE4B3A00F957D2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		6FC8528721A0C54400555690 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FC8528A21A0C54400555690 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FC8528C21A0C54400555690 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,9 +60,12 @@
 		6FC8528921A0C54400555690 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				6FB0E9E821AE4B3A00F957D2 /* SecondViewController.swift */,
+				6F7C98F721ABB90E00719CB4 /* TicTacToeView.swift */,
 				6FC8528A21A0C54400555690 /* AppDelegate.swift */,
 				6FC8528C21A0C54400555690 /* ViewController.swift */,
 				6FC8528E21A0C54400555690 /* Main.storyboard */,
+				6F7C98F121AA499900719CB4 /* TicTacToe.swift */,
 				6FC8529121A0C54500555690 /* Assets.xcassets */,
 				6FC8529321A0C54500555690 /* LaunchScreen.storyboard */,
 				6FC8529621A0C54500555690 /* Info.plist */,
@@ -136,6 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FC8528D21A0C54400555690 /* ViewController.swift in Sources */,
+				6F7C98F821ABB90E00719CB4 /* TicTacToeView.swift in Sources */,
+				6F7C98F221AA499900719CB4 /* TicTacToe.swift in Sources */,
+				6FB0E9E921AE4B3A00F957D2 /* SecondViewController.swift in Sources */,
 				6FC8528B21A0C54400555690 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
