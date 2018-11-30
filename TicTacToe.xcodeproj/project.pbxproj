@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F5C0A7121B12245008DFA11 /* playSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5C0A7021B12245008DFA11 /* playSounds.swift */; };
+		6F5C0A7621B12CBE008DFA11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FC8529121A0C54500555690 /* Assets.xcassets */; };
+		6F5C0A7821B12CCF008DFA11 /* drainedIt.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6F5C0A7721B12CCF008DFA11 /* drainedIt.wav */; };
 		6F7C98F221AA499900719CB4 /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7C98F121AA499900719CB4 /* TicTacToe.swift */; };
 		6F7C98F821ABB90E00719CB4 /* TicTacToeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7C98F721ABB90E00719CB4 /* TicTacToeView.swift */; };
 		6FB0E9E921AE4B3A00F957D2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0E9E821AE4B3A00F957D2 /* SecondViewController.swift */; };
 		6FC8528B21A0C54400555690 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC8528A21A0C54400555690 /* AppDelegate.swift */; };
 		6FC8528D21A0C54400555690 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC8528C21A0C54400555690 /* ViewController.swift */; };
 		6FC8529021A0C54400555690 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FC8528E21A0C54400555690 /* Main.storyboard */; };
-		6FC8529221A0C54500555690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FC8529121A0C54500555690 /* Assets.xcassets */; };
 		6FC8529521A0C54500555690 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FC8529321A0C54500555690 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F5C0A7021B12245008DFA11 /* playSounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playSounds.swift; sourceTree = "<group>"; };
+		6F5C0A7721B12CCF008DFA11 /* drainedIt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drainedIt.wav; sourceTree = "<group>"; };
 		6F7C98F121AA499900719CB4 /* TicTacToe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToe.swift; sourceTree = "<group>"; };
 		6F7C98F721ABB90E00719CB4 /* TicTacToeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeView.swift; sourceTree = "<group>"; };
 		6FB0E9E821AE4B3A00F957D2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +48,7 @@
 		6FC8527E21A0C54300555690 = {
 			isa = PBXGroup;
 			children = (
+				6F5C0A7721B12CCF008DFA11 /* drainedIt.wav */,
 				6FC8528921A0C54400555690 /* TicTacToe */,
 				6FC8528821A0C54400555690 /* Products */,
 			);
@@ -69,6 +74,7 @@
 				6FC8529121A0C54500555690 /* Assets.xcassets */,
 				6FC8529321A0C54500555690 /* LaunchScreen.storyboard */,
 				6FC8529621A0C54500555690 /* Info.plist */,
+				6F5C0A7021B12245008DFA11 /* playSounds.swift */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -131,8 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F5C0A7821B12CCF008DFA11 /* drainedIt.wav in Resources */,
+				6F5C0A7621B12CBE008DFA11 /* Assets.xcassets in Resources */,
 				6FC8529521A0C54500555690 /* LaunchScreen.storyboard in Resources */,
-				6FC8529221A0C54500555690 /* Assets.xcassets in Resources */,
 				6FC8529021A0C54400555690 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +156,7 @@
 				6F7C98F221AA499900719CB4 /* TicTacToe.swift in Sources */,
 				6FB0E9E921AE4B3A00F957D2 /* SecondViewController.swift in Sources */,
 				6FC8528B21A0C54400555690 /* AppDelegate.swift in Sources */,
+				6F5C0A7121B12245008DFA11 /* playSounds.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y2CU5N862T;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y2CU5N862T;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -23,10 +23,10 @@ class TicTacToe {
     
     var winner: String? = nil
     var currentTurn = "one"
-    
+    var goodResult = true
     func playerOneInsert(at block: Int) -> (symbol: Character, success: Bool) {
         
-        var goodResult = true
+        
         
         switch block {
         case 0:
@@ -61,7 +61,6 @@ class TicTacToe {
     
     func playerTwoInsert(at block: Int) -> (symbol: Character, success: Bool) {
         
-        var goodResult = true
         
         switch block {
         case 0:

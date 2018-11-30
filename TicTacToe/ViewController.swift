@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import GameKit
+
 
 class ViewController: UIViewController {
     @IBOutlet weak var tictactoeview: TicTacToeView!
 
     @IBOutlet var allBlocks: [UIButton]!
-    
+
     var game = TicTacToe()
+    var sound = SoundPlayer()
     
     @IBAction func newgame(_ sender: UIButton) {
        tictactoeview.reset()
@@ -32,18 +35,24 @@ class ViewController: UIViewController {
             }
             
             if(game.checkForTTT()){
+                sound.playSound()
                 ViewController.winner = game.winner!
-                 performSegue(withIdentifier: "gameEndedSegue", sender: self)
+                performSegue(withIdentifier: "gameEndedSegue", sender: self)
             }
             
+            if (game.goodResult == true){
             tictactoeview.XorO = (gameSymbol , allBlocks[blockNumber].center)
+            }
+            
+            game.goodResult = true
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //winner = nil
-    }
+
+        }
 
 }
 

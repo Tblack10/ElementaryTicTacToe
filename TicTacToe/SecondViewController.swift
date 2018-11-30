@@ -13,13 +13,13 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var winnerName: UILabel!
     
     override func viewDidAppear(_ animated: Bool) {
-        winnerName.text = "\(ViewController.winner!) Wins!!"
+        winnerName.text = "\(winner!) Wins!"
     }
-    
+    var winner: String? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        winner = ViewController.winner
     }
     
     
