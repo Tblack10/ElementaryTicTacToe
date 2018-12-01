@@ -11,7 +11,8 @@ import UIKit
 @IBDesignable
 class TicTacToeView: UIView {
     
-    
+
+
     var XorO: (type: Character, start: CGPoint) = ("x", CGPoint(x: -40, y: -40)) {didSet{ setNeedsDisplay(); setNeedsLayout()}}
 
     
@@ -45,7 +46,7 @@ class TicTacToeView: UIView {
         path.addLine(to: end)
         path.close()
         path.lineWidth = 5
-        UIColor.black.set()
+        UIColor.yellow.set()
         path.stroke()
         path.fill()
     }
@@ -64,7 +65,7 @@ class TicTacToeView: UIView {
     
      func drawO(from start: CGPoint) {
         let circle = UIBezierPath(arcCenter: start, radius: 50, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: true)
-        UIColor.black.set()
+        UIColor.yellow.set()
         circle.lineWidth = 5
         circle.stroke()
     }
@@ -76,6 +77,7 @@ class TicTacToeView: UIView {
         setNeedsDisplay()
         setNeedsLayout()
     }
+    
     
     
 }

@@ -11,15 +11,20 @@ import UIKit
 class SecondViewController: UIViewController {
     
     @IBOutlet weak var winnerName: UILabel!
+    @IBOutlet weak var goBackButton: UIButton!
     
     override func viewDidAppear(_ animated: Bool) {
         winnerName.text = "\(winner!) Wins!"
     }
+    
     var winner: String? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         winner = ViewController.winner
+        winnerName.shadowOffset = CGSize(width: 2, height: 2)
+        winnerName.shadowColor = UIColor.black
+        goBackButton.titleLabel?.shadowOffset = CGSize(width: 2, height: 2)
     }
     
     

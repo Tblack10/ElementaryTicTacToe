@@ -34,9 +34,6 @@ struct SoundPlayer {
         }
         
         audioPlayer?.play()
-        
-        print(audioPlayer?.volume)
-
     }
     
     func muteSound()

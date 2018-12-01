@@ -10,13 +10,19 @@ import UIKit
 import GameKit
 
 
+
 class ViewController: UIViewController {
     @IBOutlet weak var tictactoeview: TicTacToeView!
 
+    @IBOutlet weak var newGameButton: UIButton!
     @IBOutlet var allBlocks: [UIButton]!
 
     var game = TicTacToe()
     var sound = SoundPlayer()
+    
+    override func viewWillAppear(_ animated: Bool){
+        tictactoeview.reset()
+    }
     
     @IBAction func newgame(_ sender: UIButton) {
        tictactoeview.reset()
@@ -50,8 +56,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //winner = nil
-
+        newGameButton.titleLabel?.shadowOffset = CGSize(width: 1, height: 1)
         }
 
 }
