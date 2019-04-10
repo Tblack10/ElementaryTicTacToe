@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     
     @IBAction func newgame(_ sender: UIButton) {
         game.newGame()
+        tictactoeview.reset()
     }
     
     static var winner: String? = nil
