@@ -47,7 +47,7 @@ class ViewController: UIViewController {
             }
             
             if (game.goodResult == true){
-            tictactoeview.XorO = (gameSymbol , allBlocks[blockNumber].center)
+                tictactoeview.XorO = (gameSymbol , allBlocks[blockNumber].center)
             }
             
             game.goodResult = true

@@ -11,8 +11,6 @@ import UIKit
 @IBDesignable
 class TicTacToeView: UIView {
     
-
-
     var XorO: (type: Character, start: CGPoint) = ("x", CGPoint(x: -40, y: -40)) {didSet{ setNeedsDisplay(); setNeedsLayout()}}
 
     
@@ -22,8 +20,8 @@ class TicTacToeView: UIView {
     override func draw(_ rect: CGRect) {
         createBoardLine(from: CGPoint(x: 128, y: 130), to: CGPoint(x: 128, y: 560))
         createBoardLine(from: CGPoint(x: 248, y: 130), to: CGPoint(x: 246, y: 560))
-        createBoardLine(from: CGPoint(x: 5, y: 280), to: CGPoint(x: 370, y: 280))
-        createBoardLine(from: CGPoint(x: 5, y: 404), to: CGPoint(x: 370, y: 404))
+        createBoardLine(from: CGPoint(x: 15, y: 280), to: CGPoint(x: 370, y: 280))
+        createBoardLine(from: CGPoint(x: 15, y: 404), to: CGPoint(x: 370, y: 404))
         
         if (XorO.type == "x"){
             previousXPaths.append(XorO.start)
