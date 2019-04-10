@@ -25,8 +25,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func newgame(_ sender: UIButton) {
-       tictactoeview.reset()
-       game.newGame()
+        game.newGame()
     }
     
     static var winner: String? = nil
@@ -43,6 +42,7 @@ class ViewController: UIViewController {
             if(game.checkForTTT()){
                 sound.playSound()
                 ViewController.winner = game.winner!
+                game.newGame()
                 performSegue(withIdentifier: "gameEndedSegue", sender: self)
             }
             
