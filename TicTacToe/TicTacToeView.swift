@@ -13,7 +13,6 @@ class TicTacToeView: UIView {
     
     var XorO: (type: Character, start: CGPoint) = ("x", CGPoint(x: -40, y: -40)) {didSet{ setNeedsDisplay(); setNeedsLayout()}}
 
-    
     var previousXPaths:[CGPoint] = []
     var previousOPaths:[CGPoint] = []
     
